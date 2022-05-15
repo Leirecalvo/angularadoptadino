@@ -1,0 +1,83 @@
+section{
+    padding-top: 2em;
+}
+
+h2{
+    margin: 1em 0;
+}
+
+section img{
+    animation: floating 6s ease-in-out infinite;
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+}
+.info-dino{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 50vw;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+}
+.info-dino:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 24px solid #fff;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    left: 25vw;
+    bottom: -24px;
+}
+.info-details-dino{
+    margin-bottom: 20px;
+}
+
+.info-dino p, .info-dino b, .info-dino span{
+    color: black;
+}
+
+.info-dino button {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff9bdb;
+    width: 50%;
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.info-dino button:hover{
+    background-color: #f474d5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {  
+    .info-dino{
+        width: 70vw;
+    }
+    .info-dino:before {
+        left: 33vw;
+    }
+}
+
+@media (max-width:500px) {  
+    .info-dino{
+        width: 90vw;
+    }
+    .info-dino:before {
+        left: 38vw;
+    }
+}

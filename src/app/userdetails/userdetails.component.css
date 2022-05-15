@@ -1,0 +1,25 @@
+span{
+    cursor: pointer;
+}
+.none{
+    display: none;
+    content: "Editar usuario";
+}
+.view{
+    display: inline-block;
+    content: "Editar usuario";
+}
+button{
+    width: 48%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.custom-form{
+    background-color: #0098cb;
+}
+section{
+    padding-bottom: 200px;
+}

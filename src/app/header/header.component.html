@@ -1,0 +1,32 @@
+<header>
+    <div class="logo"><a href=""><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/322/sauropod_1f995.png"> <h1>Adopt a dino!</h1></a></div>
+    <i class="menu-icon" (click)="menuResponsive()"><img src="../../assets/img/burger.png"></i>
+    <div class="menu">
+    <nav *ngIf="!logged" class="offline">
+        <a routerLink="/dinosaurs">Dinosaurios</a> 
+        <a routerLink="/register">Registro</a> 
+        <div class="round"><a routerLink="/login">Log in</a></div>
+    </nav>
+    <nav *ngIf="logged" class="online">
+        <a routerLink="/dinosaurs">Dinosaurios</a> 
+        <div *ngIf="hasdino">
+        <a [routerLink]="['/adoption/' + adoptionId]">Mi dinosaurio</a>
+        </div>
+        <a [routerLink]="['/user/' + userId]">Mi cuenta</a>
+        <div class="round"><a (click)="logout()">Log out</a></div>
+    </nav>
+    </div>
+    <div class="menu-responsive">
+        <nav *ngIf="!logged" class="offline">
+            <a (click)="menuResponsive()" routerLink="/dinosaurs">Dinosaurios</a> 
+            <a (click)="menuResponsive()" routerLink="/register">Registro</a> 
+            <a (click)="menuResponsive()" routerLink="/login">Log in</a>
+        </nav>
+        <nav *ngIf="logged" class="online">
+            <a (click)="menuResponsive()" routerLink="/dinosaurs">Dinosaurios</a> 
+            <a (click)="menuResponsive()" [routerLink]="['/adoption/' + adoptionId]">Mi dinosaurio</a>
+            <a (click)="menuResponsive()" [routerLink]="['/user/' + userId]">Mi cuenta</a>
+            <a (click)="logout()">Log out</a>
+        </nav>
+        </div>
+</header>

@@ -1,0 +1,20 @@
+<section>
+    <h2>Dinosaurios</h2>
+    <div class="info-intro"><p>En Adopt a Dino! buscamos un hogar para los dinosaurios. Aquí abajo puedes ver algunos de los dinosaurios 
+    que hemos ido rescatando. Eso si, si vas a adoptarlos, te comprometes a cuidarlos dándoles un espacio y alimentándolos correctamente. 
+    Para poder adoptarlos tienes que iniciar sesión o registrarte.</p></div>
+    <br>
+    <div class="dino-show">
+    <ng-container *ngFor="let objeto of objectDi; let i = index">
+    <div class="dino-adoption" *ngIf="objeto.adopted === 'No'">
+        
+        <h3>{{ objeto.name }}</h3>
+        <div *ngFor="let object of objectTy; let i = index">
+            <div class="dino-type" *ngIf="object.id === objeto.typeDinoId">
+            <p>{{ object.typeName }}</p>
+            </div>
+        </div>
+        <img src="{{objeto.photo}}" />
+        <button (click)="getId(objeto.id)" [routerLink]="['/dinosaur/' + objeto.id]">Más info</button>
+    </div></ng-container></div>
+</section>

@@ -1,1 +1,140 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* h1, * h2, * h3, * h4, * h5, * h6{
+    font-family: 'Gochi Hand';
+    color: white;
+}
+
+* a, * p, *{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+html{    
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background: black;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+section{
+    padding: 2%;
+    background: url('assets/img/starts-bg.png');
+    background-size: 20%;
+    background-repeat: repeat;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 2em 0 1.5em 0;
+}
+
+button, input{
+    color: black;
+}
+
+.hover{
+    cursor: pointer;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+/* FORMULARIOS REGISTRO Y LOGIN */
+.custom-form {
+    width: 60vw;
+    margin: 0px auto;
+    background: #ffb6e7;
+    padding: 2rem 3rem;
+    margin: auto;
+    border-radius: 2.5rem;
+    color: black;
+    margin-top: 5rem;
+  }
+  .custom-form input {
+    display: block;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    border: 0 none;
+    background: #ebf5fc;
+    font-size: 15px;
+  }
+  button, .custom-form button {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #42d23d;
+    width: 100%;
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+  button:hover, .custom-form button:hover{
+    background-color: #1f821a;
+  }
+
+  /* FIN REGISTRO */
+
+/* .grass{
+    width: 100vw;
+    height: 60vh;
+    position: absolute;
+    /* border-radius: 500px; 
+    bottom: 0;
+    background-color: green;
+    z-index: -1;
+} */
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: greenyellow;
+  }
+  
+::selection {
+    color: black;
+    background: greenyellow;
+}
+
+
+@keyframes floating{
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@media (max-width: 768px){
+    .custom-form {
+        width: 90vw;
+        margin: 0px auto;
+        padding: 2rem 1rem;
+    }
+    h2{
+        margin: 1em 0;
+    }
+}

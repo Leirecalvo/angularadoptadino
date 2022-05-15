@@ -1,0 +1,132 @@
+header{
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    background-color: #896dd1;
+    padding: 0  3.125em;
+    height: 15vh;
+    color: white;
+    align-items: center;
+    justify-content:space-between;
+}
+header h1, header p, nav{
+    color: white;
+}
+
+header a{
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   margin-right: 20px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-responsive{
+    display: none;
+}
+
+.round{
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    border: 1px solid white;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: #42d23d;
+} 
+
+.round:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #42d23d;
+    border: 1px solid #42d23d;
+}
+
+.round a:hover{
+    color: white;
+}
+
+.round a{
+    margin-right: 0px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.logo h1{
+    display: inline;
+}
+
+.logo img{
+    width: 3em;
+    margin-right: 1em;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {  
+    .menu-icon{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-responsive{
+        z-index: 1200;
+        display: none;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        background-color: #42d23d;
+        padding: 2em;
+        width: 100vw;
+        margin: 0px;
+    }
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+        align-items: center;
+    }
+    nav a{
+        border-bottom: 1px solid white;
+        width: 100%;
+        padding: 2em 0;
+    }
+    nav a:hover{
+        color: white;
+    }
+    nav a:last-child, nav a:last-child:hover{
+        border: none;
+        border-radius: 0px;
+        padding: 2em 0;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {  
+    .logo h1{
+        display: none;
+    }
+    header{
+        height: 10vh;
+    }
+    .menu-responsive{
+        top: 10vh;
+    }
+}
+

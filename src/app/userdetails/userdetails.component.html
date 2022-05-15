@@ -1,0 +1,13 @@
+<section>
+<h2>¡Hola {{ objectU.name }}!</h2>
+<div class="custom-form">
+<label>Nombre: </label><input type="text" placeholder="{{ objectU.name }}" [(ngModel)]="us.name">
+<label> Apellido:</label><input type="text" placeholder="{{ objectU.surname }}" [(ngModel)]="us.surname">
+<label> Mail:</label><input type="text" placeholder="{{ objectU.mail }}" [(ngModel)]="us.mail">
+<label> Contraseña:</label><input type="password" [(ngModel)]="us.password">
+<div class="buttons">
+<button (click)="hasDinoWhat(); putDataUser(objectU.id, hasDino)">Actualizar datos</button>
+<button (click)="deleteDataUser(objectU.id)">Eliminar cuenta</button>
+</div></div>
+</section>
+    

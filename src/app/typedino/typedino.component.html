@@ -1,0 +1,8 @@
+<app-dinosaur></app-dinosaur>
+<section>
+    <h2>Type Dino</h2>
+    <br>
+    <div *ngFor="let objeto of objectTy; let i = index">
+        <p>{{ objeto.typeName }} - {{ objeto.feeding }}</p>
+    </div>
+</section>

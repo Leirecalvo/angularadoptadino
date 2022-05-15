@@ -1,0 +1,15 @@
+<section>
+    <h2>Mi dinosaurio</h2>
+    <div class="info-details-dino" *ngFor="let object of objectTy; let i = index">
+    <span class="dino-type" *ngIf="objectD.typeDinoId === object.id">
+        <div class="paper">
+        <h2>Certificado de adopción</h2>
+        <p>Se certifica que {{ objectU.name }} es el/la dueño/a {{ objectD.name }}.</p>
+        <p>{{ objectD.name }} es un <span class="lowercase">{{ object.typeName }}</span>.</p>
+        <div class="logo-cert"><img src="../../assets/img/adopt-dino.png"> <h3>Adopt a dino!</h3></div>
+    </div>
+        <img src="{{ objectD.photo }}">
+    </span>
+</div>
+</section>
+<!-- <div class="grass"></div> -->

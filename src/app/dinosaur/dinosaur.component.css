@@ -1,0 +1,106 @@
+.dino-show a{
+    text-decoration: none;
+}
+.dino-show{
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+}
+section img{
+    width: 250px;
+}
+.dino-adoption{
+    animation: floating 6s ease-in-out infinite;
+    border-radius: 30px;
+    background-attachment: fixed;
+    height: 100%;
+    background: url('../../assets/img/starts-bg.png');
+    padding-top: 2em;
+    background-size: 100%;
+    background-repeat: repeat;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 20vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dino-adoption:nth-child(even){
+    animation-delay: 0.5s;
+}
+
+.dino-show p,
+.dino-show h3{
+    color: white;
+}
+.dino-show h3{
+    font-size: 1.5em;
+}
+.dino-show button{
+    margin-top: 2em;
+}
+.info-intro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 100px;
+}
+.info-intro p{
+    width: 50vw;
+    color: black;
+}
+.dino-adoption img{
+    width: 100%;
+}
+
+h2{
+    color: black;
+}
+section{
+    background-color: white;
+    padding-bottom: 200px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {  
+    .dino-adoption{
+        width: 40vw;
+    }
+    .dino-adoption:first-child, .dino-adoption:nth-child(2){
+        margin-bottom: 50px;
+    }
+    .info-intro p{
+        text-align: left;
+        width: 95vw;
+    }
+}
+
+@media (max-width: 768px){
+    .dino-adoption{
+        width: 90vw;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .dino-adoption{
+        margin-bottom: 50px;
+    }
+    .dino-adoption:last-child{
+        margin-bottom: 0;
+    }
+    .info-intro{
+        margin-bottom: 30px;
+    }
+}

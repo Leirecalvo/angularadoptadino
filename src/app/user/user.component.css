@@ -1,0 +1,11 @@
+span{
+    cursor: pointer;
+}
+
+section{
+    padding-bottom: 200px;
+}
+
+.hide{
+    display: none;
+}

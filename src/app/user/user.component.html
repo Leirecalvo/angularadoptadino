@@ -1,0 +1,27 @@
+<!-- <section>
+<h2>Usuarios</h2>
+<br>
+<div *ngFor="let objeto of objectUs; let i = index">
+    <p><b><span>{{ objeto.name }}</span></b> <span (click)="editUserDisplay(objeto.id)" class="edit-user"> Editar usuario</span> / <span (click)="deleteDataUser(objeto.id)">Eliminar usuario</span>
+        <div *ngIf="objeto.id === viewId">
+            <br>
+            <label>Nombre: </label> <input type="text" placeholder="{{objeto.name}}" [(ngModel)]="us.name">
+            <label> Apellido: </label> <input type="text" placeholder="{{objeto.surname}}" [(ngModel)]="us.surname">
+            <label> Mail: </label> <input type="text" placeholder="{{objeto.mail}}" [(ngModel)]="us.mail">
+            <label> Contraseña: </label> <input type="password" [(ngModel)]="us.password">
+            <button (click)="putDataUser(objeto.id)">Click!</button>
+            <br><br>
+        </div>
+    <br><br>
+</div> -->
+
+<section>
+    <h2>¡Quiero registrarme!</h2>
+    <div class="custom-form">
+        <input placeholder="Nombre" type="text" [(ngModel)]="ue.name">
+        <input placeholder="Apellido" type="text" [(ngModel)]="ue.surname">
+        <input placeholder="Mail" type="text" [(ngModel)]="ue.mail">
+        <input placeholder="Contraseña" type="password" [(ngModel)]="ue.password">
+        <button (click)="postDataUser()">Enviar</button>
+    </div>
+</section>

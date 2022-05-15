@@ -1,0 +1,14 @@
+<section>
+    <h2>{{objectD.name}}</h2>
+    <div class="info-dino">
+        <div class="info-details-dino" *ngFor="let object of objectTy; let i = index">
+            <span class="dino-type" *ngIf="objectD.typeDinoId === object.id">
+                <p>Hola, mi nombre es <b>{{objectD.name}}</b> y soy un <b class="lowercase">{{ object.typeName }}</b>.</p>
+                <p>Peso <b>{{objectD.weight}}</b> y soy <b class="lowercase">{{ object.feeding }}</b>.
+            </span>
+        </div>
+        <button (click)="getDataUserId(id); postDataAdoption(); putDataDinosaur(objectD.id); putDataUser(objectU.id)">Adóptame</button>
+    </div>
+    <img src="{{objectD.photo}}">
+</section>
+<div class="grass"></div>

@@ -1,0 +1,27 @@
+.dino-show{
+    padding: 50px;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+}
+section img{
+    width: 250px;
+}
+.dino-adoption{
+    height: 100%;
+    color: black;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+.dino-show p,
+.dino-show h3{
+    color: black;
+}
